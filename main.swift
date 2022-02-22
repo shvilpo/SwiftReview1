@@ -42,4 +42,17 @@ func lessThan10 (item: Int) -> Bool {
   return item < 10
 }
 var numbers = [10,15,181, 31, 54, 9]
+print (numbers)
 print (hasAnyMatches(list: numbers, condition: lessThan10))
+
+numbers.map({(number: Int) -> Int in 
+  if (number % 2)==1 { 
+    return 0 
+  }
+  else {
+    return number * 3 
+  }
+})
+
+let mappedNumbers=numbers.map({number in 3*number})
+print (mappedNumbers)
